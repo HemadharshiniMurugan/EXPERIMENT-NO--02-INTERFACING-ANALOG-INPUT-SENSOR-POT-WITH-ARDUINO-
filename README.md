@@ -1,9 +1,10 @@
  INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
-
+```
 DATE: 23-02-2024
 NAME: HEMADHARSHINI M
 ROLL NO: 212222040053
 DEPARTMENT: CSE
+```
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
