@@ -1,7 +1,9 @@
  INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
 
-
-
+DATE: 23-02-2024
+NAME: HEMADHARSHINI M
+ROLL NO: 212222040053
+DEPARTMENT: CSE
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
@@ -67,19 +69,57 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+ ```
+int pot;
+int led=7;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  
+  pot=analogRead(A0);
+  //Serial.print("Value=");
+  Serial.println(pot);
+  if(pot>900)
+  {
+  digitalWrite(led, HIGH);
+  delay(500); // Wait for 500 millisecond(s)
+  digitalWrite(led, LOW);
+  delay(500); // Wait for 500 millisecond(s)
+}
+  else
+  {
+    digitalWrite(led,LOW);
+  delay(500);
+  }
+}  
+```
 
+FIGURE 2-GRAPH
 
-
-
-
+![dee 2](https://github.com/HemadharshiniMurugan/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119404809/0d791a26-b048-4790-8531-4a89fdb8cd5b)
 
 
 
 **
 **Simulation output:** 
 **
+
+FIGURE 3-OFF CONDITION
+
+![out1](https://github.com/HemadharshiniMurugan/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119404809/6cd9e74a-5028-4370-9491-917c36ee0027)
+
+FIGURE 4-ON CONDITION
+
+![out2](https://github.com/HemadharshiniMurugan/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119404809/c47fcd94-e06a-4315-af90-3992a8c42cb8)
+
+FIGURE 5-SCHEMATIC OUTPUT
+
+![schematic](https://github.com/HemadharshiniMurugan/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119404809/7dfaa820-196c-441d-b4f0-290ea9698262)
 
 
 [My image](username.github.com/repository/img/image.jpg)
