@@ -122,7 +122,7 @@ FIGURE 4-SCHEMATIC OUTPUT
 ![schematic](https://github.com/HemadharshiniMurugan/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119404809/7dfaa820-196c-441d-b4f0-290ea9698262)
 
 
-[My image](username.github.com/repository/img/image.jpg)
+
 
 
 
